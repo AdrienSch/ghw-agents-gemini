@@ -6,7 +6,8 @@ const ai = new GoogleGenAI({
 });
 
 const response = await ai.models.generateContent({
-  model: "gemini-2.5-flash",
+  // "gemini-3.1-flash-lite", "gemini-3.5-flash-lite" --> Works!
+  model: "gemini-3.1-flash-lite", // original model: "gemini-2.5-flash"
   contents: "Explain AI agents to a beginner in 3 sentences.",
 });
 

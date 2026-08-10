@@ -8,12 +8,12 @@ const ai = new GoogleGenAI({
 
 // Read the image from your computer
 // and convert it to base64 so we can send it to Gemini.
-const imageData = fs.readFileSync("demo2-image.jpg", {
+const imageData = fs.readFileSync("demo-image.jpg", {
   encoding: "base64",
 });
 
 const response = await ai.models.generateContent({
-  model: "gemini-3.6-flash",
+  model: "gemini-3.5-flash-lite",
 
   contents: [
     {

@@ -11,7 +11,7 @@ const ai = new GoogleGenAI({
 // Create a chat session.
 // Gemini will keep the conversation history for this session.
 const chat = ai.chats.create({
-  model: "gemini-3.6-flash",
+  model: "gemini-3.5-flash-lite",
   config: {
     systemInstruction: `
       You are a friendly AI mentor helping beginner developers.
